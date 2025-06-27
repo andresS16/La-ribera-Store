@@ -29,7 +29,7 @@ ecommerce-la-ribera/
 
  Cómo iniciar el Proyecto
 1.	Clonar el repositorio:
-git clone https://github.com/usuario/repositorio.git
+git clone https://github.com/andresS16/La-ribera-Store.git
 2.	Instalar dependencias:
 npm install
 3.	Ejecutar:
