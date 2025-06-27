@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+----------Header-----------
+
+header{
+  background-color: #f5c597;
+  padding: 10px;
+  border-bottom: solid 4px #d0b6b7;
+}
+
+.redes{
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+header i{
+  color: #859bb2;
+  font-size: 20px;
+  margin-right: 7px;
+  border: #d0b6b7 solid 1px;
+  border-radius:30%;
+  padding: 4px;
+  box-shadow: 1px 2px 6px #859bb2;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: center;
+}
+
+.enlaces{
+  display: flex;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+li{
+  margin-right: 10px;
+}
+.logo{
+  width: 190px;
+  height: 190px;
+  text-align: center;
+}
+
+---------Foter----------
+
+footer{
+  background-color:white;
+  margin-bottom: 10px;
+  border-top: solid 4px #d0b6b7;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+footer h5{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #cac2c0;
+} */
+
+/* home body */
+
+body, h1, h2, h3, p, img {
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3{
+  font-family: 'Poppins';
+  color: #cac2c0;
+}
+p{
+  color: #cac2c0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+body{
+  background-image: url('/img/HebraLibreFondo.jpg'); 
+   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-1 {
+  text-align: center;
+}
+
+
+.section-1 {
+  height: 100vh; /* 100% del viewport height */
+  width: 100%;   /* 100% del ancho del contenedor padre (por defecto el cuerpo del documento) */
+  position: relative;
+  overflow: hidden; /* Evita que la imagen se desborde de la sección */
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo la proporción y cortando si es necesario */
+}
+
+.section-2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.section-2 p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en pantallas más pequeñas */
+  padding: 20px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  text-align: center;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url('/img/HebraLibreFondo.jpg');
+}
+
+.card-1 img,
+.card-2 img,
+.card-3 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.section-6 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.section-6 {
+  background-image: url('/img/HebraLibreFondo.jpg'); /* Ruta a tu imagen */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.section-4 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-5 {
+  max-width: 600px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.section-5 p {
+  margin-bottom: 15px;
+}
+
+#footer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo la proporción y cortando si es necesario */
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* Estilos específicos para dispositivos móviles (teléfonos) */
+
+  /* Por ejemplo, ajusta el padding del header para que ocupe menos espacio */
+  header {
+    padding: 5px;
+  }
+
+  /* Alinea las redes sociales en la parte superior izquierda */
+  .redes {
+    top: 5px;
+    left: 5px;
+  }
+
+  /* Puedes hacer que los íconos del header sean más pequeños */
+  header i {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  /* Modifica el tamaño de la fuente para que sea más legible en pantallas pequeñas */
+  .enlaces li {
+    font-size: 14px;
+  }
+
+  /* Puedes ajustar el tamaño de la logo para que se vea mejor en dispositivos más pequeños */
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Ajusta el tamaño de fuente y márgenes en la sección 1 */
+  .section-1 {
+    padding: 10px;
+  }
+
+  /* Modifica la apariencia de las tarjetas en la sección 3 para que se vean bien en pantallas pequeñas */
+  .card-1,
+  .card-2,
+  .card-3 {
+    max-width: 100%;
+  }
+
+  /* Ajusta la apariencia de los botones */
+  .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+ 
+
+  /* Modifica la alineación en la sección 6 */
+  .section-6 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Haz que las imágenes en la sección 4 ocupen el ancho completo */
+  .section-4 img {
+    width: 100%;
+  }
+
+  /* Ajusta el tamaño del texto en la sección 5 */
+  .section-5 {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  /* Asegúrate de que el texto en la sección 5 tenga márgenes apropiados */
+  .section-5 p {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos específicos para tabletas */
+
+  /* Puedes ajustar el padding del header para que se vea bien en tablets */
+  header {
+    padding: 15px;
+  }
+
+  /* Puedes reajustar la posición de las redes sociales en el header */
+  .redes {
+    top: 10px;
+    left: 10px;
+  }
+
+  /* Modifica el tamaño de fuente de los íconos en el header */
+  header i {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  /* Ajusta el tamaño de fuente de los enlaces en la barra de navegación */
+  .enlaces li {
+    font-size: 16px;
+  }
+
+  /* Puedes cambiar el tamaño de la logo para que se vea bien en tablets */
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Modifica el padding en la sección 1 */
+  .section-1 {
+    padding: 30px;
+  }
+
+  /* Ajusta el tamaño de fuente en la sección 2 */
+  .section-2 p {
+    font-size: 18px;
+  }
+
+  /* Modifica el padding en la sección 3 */
+  .section-3 {
+    padding: 30px;
+  }
+
+  /* Puedes ajustar el tamaño de las tarjetas en la sección 3 para que se vean bien en tablets */
+  .card-1,
+  .card-2,
+  .card-3 {
+    max-width: 250px;
+  }
+
+  /* Modifica el tamaño de fuente de los botones */
+  .btn {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  /* Ajusta la alineación en la sección 6 */
+  .section-6 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Puedes cambiar el tamaño de las imágenes en la sección 4 */
+  .section-4 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Modifica el tamaño del texto en la sección 5 */
+  .section-5 {
+    max-width: 800px;
+    font-size: 18px;
+  }
+
+  /* Asegúrate de que el texto en la sección 5 tenga márgenes apropiados */
+  .section-5 p {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Estilos específicos para pantallas de escritorio */
+
+  /* Ajusta el padding del header para pantallas de escritorio */
+  header {
+    padding: 20px;
+  }
+
+  /* Reajusta la posición de las redes sociales en el header */
+  .redes {
+    top: 15px;
+    left: 15px;
+  }
+
+  /* Modifica el tamaño de fuente de los íconos en el header */
+  header i {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+
+  /* Ajusta el tamaño de fuente de los enlaces en la barra de navegación */
+  .enlaces li {
+    font-size: 18px;
+  }
+
+  /* Puedes cambiar el tamaño de la logo para pantallas de escritorio */
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  
+
+
+  /* Ajusta el tamaño de fuente en la sección 2 para pantallas de escritorio */
+  .section-2 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 20px;
+    background-color: #f5c597;
+  }
+
+  /* Modifica el padding en la sección 3 para pantallas de escritorio */
+  .section-3{
+    background-color: #f8f8f8;
+  }
+
+  /* Puedes ajustar el tamaño de las tarjetas en la sección 3 para pantallas de escritorio */
+  .card-1,
+  .card-2,
+  .card-3 {
+    max-width: 600px;
+    height: 1000px;
+  }
+
+  /* Modifica el tamaño de fuente de los botones para pantallas de escritorio */
+  .btn {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  /* Ajusta la alineación en la sección 6 para pantallas de escritorio */
+  .section-6 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Puedes cambiar el tamaño de las imágenes en la sección 4 para pantallas de escritorio */
+  .section-4 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Modifica el tamaño del texto en la sección 5 para pantallas de escritorio */
+  .section-5 {
+    max-width: 1000px;
+    font-size: 22px;
+    margin: 30px;
+  }
+
+  /* Asegúrate de que el texto en la sección 5 tenga márgenes apropiados para pantallas de escritorio */
+  .section-5 p {
+    margin-bottom: 25px;
+    color: #cac2c0;
+  }
+}

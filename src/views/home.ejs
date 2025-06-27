@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Bienvenidos a MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">e-commerce la ribera Store</div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="/producto">ProductosAQUI</a></li>
+            <li><a href="#">Registrarse</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="banner">
+        <img src="/images/banner.jpg" alt="Promoción principal">
+      </section>
+    <main>
+        <section class="last-visit">
+            <h3>Basado en tu última visita</h3>
+            
+            <div class="products">
+                <% data.forEach((elemento,index)=>{    %>
+                <article>
+                    <img src="/images/<%= elemento.imagen %>" alt="Cafetera" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price"><%= elemento.precio%></p>
+                        <p class="discount">40% off</p>
+                        <h4 class="description"><%= elemento.nombre %></h4>
+                       
+                    </div>
+                </article>
+                <%   });   %>
+                <!-- <article>
+                    <img src="/images/img-macbook-pro-2019.jpg" alt="MacBook" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$230.000</p>
+                        <p class="discount">20% off</p>
+                        <h4 class="description">MacBook Pro 2019</h4>
+                    </div>
+                </article>
+                <article>
+                    <img src="/images/img-samsung-galaxy-s10.jpg" alt="Teléfono Móvil Samsung Galaxy" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$70.500</p>
+                        <p class="discount">10% off</p>
+                        <h4 class="description">Samsung Galaxy S10</h4>
+                    </div>
+                </article>
+                <article>
+                    <img src="/images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$23.200</p>
+                        <p class="discount">5% off</p>
+                        <h4 class="description">SmartTv Samsung 43"</h4>
+                    </div>
+                </article> -->
+            </div>
+        </section>
+        <section class="offers">
+            <h3>Ofertas</h3>
+            <div class="products">
+                <article>
+                    <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$6.770</p>
+                        <p class="discount">40% off</p>
+                        <h4 class="description">Cafetera Moulinex</h4>
+                    </div>
+                </article>
+                <article>
+                    <img src="/images/img-macbook-pro-2019.jpg" alt="MacBook" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$230.000</p>
+                        <p class="discount">20% off</p>
+                        <h4 class="description">MacBook Pro 2019</h4>
+                    </div>
+                </article>
+                <article>
+                    <img src="/images/img-samsung-galaxy-s10.jpg" alt="Teléfono Móvil Samsung Galaxy" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$70.500</p>
+                        <p class="discount">10% off</p>
+                    <h4 class="description">Samsung Galaxy S10</h4>
+                    </div>
+                </article>
+                <article>
+                    <img src="/images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$23.200</p>
+                        <p class="discount">5% off</p>
+                        <h4 class="description">SmartTv Samsung 43"</h4>
+                    </div>
+                </article>
+            </div>  
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Acerca de :</h4>
+                <ul>
+                    <li><a href="#">Pagá con tarjeta o en efectivo</a></li>
+                    <li><a href="#">Envío gratis desde $ 2.500</a></li>
+                    <li><a href="#">Copyright © 2024-2025 la ribera S.R.L.</a></li>
+                </ul>
+            </div>     
+            <div class="footer-section">
+                <h4>Ayuda</h4>
+                <ul>
+                   <li><a href="#">Cómo comprar</a></li>
+                   <li><a href="#">Preguntas frecuentes</a></li>
+                   <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+               <h4>Redes sociales</h4>
+               <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+               </ul>
+             </div>
+        </div>    
+          <div class="copyright">
+            <p>&copy; 2025 la ribera. Todos los derechos reservados.</p>
+          </div>
+    </footer>     
+</body>
+</html>

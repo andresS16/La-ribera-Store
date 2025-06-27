@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nombre": "cafetera",
+        "precio": 2000,
+        "imagen":"img-cafetera-moulinex.jpg"   
+    },
+    {
+        "id": 2,
+        "nombre": "tostadora",
+        "precio": 1500,
+        "imagen":"img-macbook-pro-2019.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "batidora",    
+        "precio": 1800,
+        "imagen":"img-samsung-galaxy-s10.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "tv samsung smart",
+        "precio": 2200,
+        "imagen":"img-tv-samsung-smart.jpg"
+    }
+]

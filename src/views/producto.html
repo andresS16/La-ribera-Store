@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+   
+        <h1>Nombre de tu Tienda</h1>
+        <nav>
+            <!-- Barra de navegación -->
+            <ul>
+                <li><a href="/inicio">Inicio</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <!-- Otros elementos de navegación -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="detalle-producto">
+            <h2>Nombre del Producto</h2>
+            <div class="imagen-producto">
+                <img src="/images/banner.jpg" alt="Nombre del Producto" id="imagenPrincipal">
+                
+            </div>
+            <div class="imagenes-adicionales">
+                <img src="/images/img_sec1.jpg" alt="Imagen Adicional 1" onclick="cambiarImagen('/images/img_sec1.jpg')">
+                <img src="/images/img_sec2.jpg" alt="Imagen Adicional 2" onclick="cambiarImagen('/images/img_sec2.jpg')">
+                <img src="/images/img_sec3.jpg" alt="Imagen Adicional 3" onclick="cambiarImagen('/images/img_sec3.jpg')">
+                <img src="/images/img_principal.jpg" alt="imagen principal" onclick="cambiarImagen('/images/img_principal.jpg')">
+            </div>
+            </div>
+            <script src="/javascript/producto.js"></script>
+            
+            
+            <div class="informacion-producto">
+                <p>Descripción del Producto: Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p>Precio: $XX.XX</p>
+                <p>Disponibilidad: En stock</p>
+                <button>Agregar al Carrito</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Información del pie de página, enlaces, datos de contacto, etc. -->
+        <p>&copy; 2024 Nombre de tu Tienda</p>
+    </footer>
+    
+    
+</body>
+</html>

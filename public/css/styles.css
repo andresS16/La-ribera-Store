@@ -1,0 +1,309 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*header*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px; /* Título más grande */
+    font-weight: bold;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .main-nav li {
+    margin-left: 20px;
+  }
+  
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main-nav a:hover {
+    text-decoration: underline;
+  }
+
+
+  /*banner*/
+  .banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  /* Estilos generales para el contenido principal de la página */
+
+  main {
+    display: flex; /* Usamos flexbox para organizar los elementos dentro de main */
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas si es necesario */
+    gap: 20px; /* Define el espacio entre los artículos */
+    justify-content: center; /* Centra los artículos dentro de la sección */
+    padding: 20px; /* Agrega un poco de espacio dentro de main */
+  }
+
+
+  /* Estilo para la sección 'Última Visita' */
+.last-visit {
+    /* Definimos un fondo de color claro para que la sección se distinga del resto de la página */
+    background-color: #f9f9f9;
+    /* Agregamos un padding (espacio) interno para que los elementos no toquen el borde de la sección */
+    padding: 20px;
+    /* Le damos un borde en la parte superior para darle un toque visual */
+    border-top: 5px solid #000;
+    /* Agregamos un margen inferior para separar esta sección del contenido siguiente */
+    margin-bottom: 30px;
+}
+
+/* Estilo del título de la sección */
+.last-visit h3 {
+    /* Cambiamos el tamaño de la fuente del título para hacerlo más grande */
+    font-size: 24px;
+    /* Ponemos el texto en negrita para hacerlo más llamativo */
+    font-weight: bold;
+    /* Le damos un color oscuro para que se lea bien */
+    color: #333;
+    /* Dejamos un margen abajo para separarlo del contenido de los productos */
+    margin-bottom: 15px;
+}
+
+/* Estilo para el contenedor de los productos */
+.last-visit .products {
+    /* Usamos un display flex para organizar los productos en fila */
+    display: flex;
+    /* Permitimos que los productos se ajusten automáticamente en una nueva línea si es necesario */
+    flex-wrap: wrap;
+    /* Establecemos un espacio entre los productos */
+    gap: 20px;
+}
+
+/* Estilo de cada artículo de producto dentro de la sección */
+.last-visit article {
+    /* Le damos un fondo blanco para resaltar cada producto */
+    background-color: #fff;
+    /* Redondeamos las esquinas de los productos para que se vean más suaves */
+    border-radius: 10px;
+    /* Definimos el tamaño del producto (como una tarjeta) */
+    width: 220px;
+    /* Agregamos un poco de sombra para que se vea elevado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Cuando el mouse pasa sobre el producto, lo hacemos "flotar" para un efecto visual */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo cuando el mouse pasa sobre un artículo (efecto hover) */
+.last-visit article:hover {
+    /* Hacemos que el producto se agrande ligeramente para un efecto de "flotante" */
+    transform: translateY(-10px);
+}
+
+/* Estilo de la imagen del producto */
+.last-visit .product_img {
+    /* Hacemos que las imágenes se adapten al tamaño del artículo, sin distorsionarse */
+    width: 100%;
+    /* Redondeamos las esquinas de la imagen para que coincidan con el estilo del producto */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Estilo del contenido dentro de cada artículo (nombre, precio, descuento) */
+.last-visit .main-article {
+    /* Agregamos un espacio dentro del artículo para separar el texto de la imagen */
+    padding: 15px;
+    /* Alineamos el texto al centro para que se vea más ordenado */
+    text-align: center;
+}
+
+/* Estilo de los precios de los productos */
+.last-visit .price {
+    /* Hacemos que el precio sea más grande y lo ponemos en negrita */
+    font-size: 20px;
+    font-weight: bold;
+    /* Lo coloreamos de un tono oscuro para destacarlo */
+    color: #333;
+    /* Dejamos espacio debajo para separar el precio del descuento */
+    margin-bottom: 10px;
+}
+
+/* Estilo del descuento de los productos */
+.last-visit .discount {
+    /* Usamos un color rojo para hacer que el descuento resalte */
+    color: #e74c3c;
+    /* Ponemos el texto en negrita */
+    font-weight: bold;
+}
+
+/* Estilo de la descripción del producto */
+.last-visit .description {
+    /* Le damos un tamaño de fuente adecuado para que sea legible */
+    font-size: 16px;
+    /* Usamos un color gris para el texto de la descripción, para que no compita con el precio o descuento */
+    color: #777;
+    /* Dejamos un margen en la parte inferior para separar la descripción de otros elementos */
+    margin-top: 10px;
+}
+
+
+
+/* Estilo para la sección 'Ofertas' */
+.offers {
+    /* Le damos un fondo gris muy claro para que se distinga del resto de la página */
+    background-color: #f9f9f9;
+    /* Agregamos un padding para que los elementos no toquen el borde de la sección */
+    padding: 20px;
+    /* Ponemos un borde superior para darle un toque visual a la sección */
+    border-top: 5px solid #000;
+    /* Dejamos un margen en la parte inferior para separar esta sección de la siguiente */
+    margin-bottom: 30px;
+}
+
+/* Estilo del título de la sección */
+.offers h3 {
+    /* Establecemos el tamaño del texto para el título */
+    font-size: 24px;
+    /* Ponemos el texto en negrita para que se vea más llamativo */
+    font-weight: bold;
+    /* Establecemos un color oscuro para que se vea bien */
+    color: #333;
+    /* Dejamos un margen en la parte inferior para separar el título del contenido */
+    margin-bottom: 15px;
+}
+
+/* Estilo para el contenedor de los productos en las ofertas */
+.offers .products {
+    /* Usamos flexbox para alinear los productos en fila */
+    display: flex;
+    /* Permitimos que los productos se muevan a la siguiente línea cuando sea necesario */
+    flex-wrap: wrap;
+    /* Establecemos un espacio entre los productos */
+    gap: 20px;
+}
+
+/* Estilo para cada artículo dentro de la sección de ofertas */
+.offers article {
+    /* Le damos un fondo blanco a los productos para destacarlos */
+    background-color: #fff;
+    /* Redondeamos las esquinas de los productos para que se vean más suaves */
+    border-radius: 10px;
+    /* Establecemos un tamaño adecuado para cada producto */
+    width: 220px;
+    /* Añadimos una sombra suave para hacer que los productos se vean elevados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hacemos que el producto tenga un efecto al pasar el mouse sobre él */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto cuando el mouse pasa sobre un artículo */
+.offers article:hover {
+    /* Hacemos que el producto se eleve un poco para dar un efecto de flotante */
+    transform: translateY(-10px);
+}
+
+/* Estilo para la imagen del producto */
+.offers .product_img {
+    /* Hacemos que la imagen se ajuste al tamaño del producto sin distorsionarse */
+    width: 100%;
+    /* Redondeamos las esquinas superiores de la imagen para que coincidan con el estilo del producto */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Estilo del contenido dentro del artículo (precio, descuento, descripción) */
+.offers .main-article {
+    /* Añadimos padding para separar el contenido de los bordes del artículo */
+    padding: 15px;
+    /* Alineamos el texto al centro para que se vea más ordenado */
+    text-align: center;
+}
+
+/* Estilo para el precio del producto */
+.offers .price {
+    /* Aumentamos el tamaño del texto para que el precio sea más destacado */
+    font-size: 20px;
+    /* Lo ponemos en negrita para hacerlo más llamativo */
+    font-weight: bold;
+    /* Le damos un color oscuro para que se lea bien */
+    color: #333;
+    /* Dejamos un espacio en la parte inferior para separar el precio del descuento */
+    margin-bottom: 10px;
+}
+
+/* Estilo para el descuento del producto */
+.offers .discount {
+    /* Usamos un color rojo brillante para hacer que el descuento resalte */
+    color: #e74c3c;
+    /* Ponemos el texto en negrita para darle más fuerza visual */
+    font-weight: bold;
+}
+
+/* Estilo de la descripción del producto */
+.offers .description {
+    /* Ponemos un tamaño de fuente adecuado para que sea fácil de leer */
+    font-size: 16px;
+    /* Usamos un color gris para que la descripción no se vea tan fuerte como el precio o el descuento */
+    color: #777;
+    /* Dejamos un margen en la parte superior para separar la descripción de otros elementos */
+    margin-top: 10px;
+}
+
+
+
+/* Estilo básico para el footer */
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0; /* Espaciado vertical */
+    text-align: center; /* Centrado de contenido */
+}
+
+/* Estilo para las secciones del footer */
+.footer-section {
+    margin-bottom: 20px; /* Espaciado entre las secciones */
+}
+
+/* Estilo de los títulos dentro del footer */
+.footer-section h4 {
+    font-size: 18px; /* Títulos más grandes */
+    font-weight: bold; /* Títulos en negrita */
+    margin-bottom: 10px; /* Separación entre título y lista */
+}
+
+/* Estilo de los enlaces dentro del footer */
+.footer-section a {
+    color: #fff; /* Enlaces en blanco */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Para que ocupe toda la línea */
+    margin-bottom: 8px; /* Espaciado entre los enlaces */
+}
+
+/* Estilo de los enlaces al pasar el mouse */
+.footer-section a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilo para el texto de copyright */
+.copyright {
+    font-size: 14px; /* Texto pequeño */
+    color: #bbb; /* Gris claro para el copyright */
+}

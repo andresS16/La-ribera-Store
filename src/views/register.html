@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Crear Cuenta </title>
+    <link rel="stylesheet"  href="/css/styles.css">
+</head>
+<body>
+    <header>
+       <div class="header-register">
+          <div class="logo-register"> 
+             <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+          </div>    
+        </div>  
+   </header>
+        <div class="bodyRegister">
+            <div class="register-conteiner"> 
+               <h2>¡Hola! ingresa tus datos.. </h2>                  
+               <form  action="procesar_login.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" maxlength="6" required>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" maxlength="6" required>
+
+                    <label for="password">Contraseña:</label>
+                    <input type="text" name="password" id="password" minlength="6" required>
+
+                    <label for="password">Vuelva a ingresar contraseña:</label>
+                    <input type="password" name="password" id="password" minlength="6" required>
+                    <label for="apellido">Correo:</label>
+                    <input type="email" name="correo" size="40">            
+                    <input type="submit" value="Iniciar Sesión">
+                </form>
+            </div>
+        </div>
+    <footer>
+        <div class="footer-register">          
+        </div>
+    </footer>    
+</body>
+</html>

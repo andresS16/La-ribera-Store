@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url('/img/HebraLibreFondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.form-register {
+    width: 400px;
+    background: #f5c597;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #d0b6b7;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: #0e74f1;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.form-register .botom {
+    width: 100%;
+    background: #569ef5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
+
+
+/* Media Queries*/
+
+@media ( max-width: 767px ) {
+    .form-register{
+        max-width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .form-register h4 {
+        font-size: 18px;
+    }
+    .form-register p{
+        font-size: 14px;
+    }
+    .form-register .botom{
+        font-size: 14px;
+    }
+
+}
+
+@media ( min-width: 768px ) {
+    .form-register{
+        max-width: 60%;
+    }
+}

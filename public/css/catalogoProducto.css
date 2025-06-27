@@ -1,0 +1,271 @@
+/* catalogo */
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+
+/*-----------------body----------*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+
+div.catalogo,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+    
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}
+/* --------------producto----------------- */
+
+body {
+    margin: 0;
+    color: #000000;
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 2;
+    /*background-color: #d0b6b7;*/
+    background-image: url(/img/HebraLibreFondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productos {
+    display: flex;
+    flex-flow: column wrap;
+    text-align:center;
+}
+.products_principal {
+    display: flex;
+    justify-content:center; 
+    margin-top: 20px;
+   
+}
+.contenido_producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo para la imagen principal */
+
+.products_principal img {
+    width: 580px;
+    height: 600px;
+    cursor: pointer;
+    margin-bottom: 5px; 
+    padding: 5px;
+
+}
+
+.titulo {
+    font-size: 24px;
+    margin-top: 0;
+    text-align: center;
+    
+}
+
+/* Estilo para el texto de descripción */
+.descrpcion_producto {
+    max-width: 100%;
+    font-size: 14px;
+    text-align: justify; 
+    font-family: "Lora, serif";
+}
+
+/* Estilo para las imágenes adicionales */
+
+.imagenes-adicionales img {
+    width: 30%;
+    height:auto;
+    cursor: pointer;
+    margin: 5px; 
+    
+
+}
+
+.imgPrinc-carrito {
+    position: relative;
+    margin-top: 20px;
+}
+
+.icono-truck {
+    position: absolute;
+    top: 15px;
+    right: 10px; 
+    padding: 10px;
+    border-radius: 50%; 
+    border-color: green;
+    background-color: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    border: 2px solid green;
+}
+
+.icono-truck i {
+    font-size: 25px; 
+    color: green; 
+    border: 5px;
+}
+
+@media (min-width: 361px) and (max-width: 789px){
+    .products_principal img {
+        width: 100vw; 
+        max-width: 90vw;  
+        height: auto;
+        cursor: pointer;
+        margin-bottom: 1.5vw;
+        padding: 1vw 1vw;        
+    } 
+   .products_principal{
+    display : flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+   }
+   
+   .contenido_producto {
+    justify-content: center;
+    align-content: center;
+   }
+   .imagenes-adicionales{
+    display:flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    max-width: 85%;
+    height:auto;
+    cursor: pointer;
+    margin: 5px;   
+   }
+   .descrpcion_producto {
+    font-size: 16px; 
+}
+
+}
+@media (min-width: 790px){
+    .imagenes-adicionales {
+        display: flex;
+        justify-content: flex-start; 
+        align-items: flex-start;
+        padding-left: 5px;
+    }
+    .imagenes-adicionales img {
+        width: 14%;    
+    }
+    .icono-truck {
+        top: 20px;
+        right: 20px; 
+      
+    }
+}
+
+
